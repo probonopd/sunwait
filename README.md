@@ -6,7 +6,7 @@ GitHub clone based on http://www.risacher.org/sunwait/
 
 Downloading
 --
-Precompiled binaries for common architectures can be found on https://github.com/probonopd/vcontrold-for-openwrt/releases - check the ```.travis.yml``` file to see how this is compiled on http://travis-ci.org automatically. Please file an issue if you need addional architectures and/or OpenWrt versions.
+Precompiled binaries for common architectures can be found on https://github.com/probonopd/sunwait-for-openwrt/releases - check the ```.travis.yml``` file to see how this is compiled on http://travis-ci.org automatically. Please file an issue if you need addional architectures and/or OpenWrt versions.
 
 Building
 --
