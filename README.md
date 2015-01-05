@@ -24,3 +24,28 @@ For example, consider this line from my crontab:
 
 This line executes at at one minute after midnight, waits until the start of civil twilight, then runs the command br ```b6 off``` (which turns off my carriage light).
 
+```
+usage: sunwait [options] [sun|civ|naut|astr] [up|down] [+/-offset] [latitude] [longitude]
+
+latitude/longigude are expressed in floating-point degrees, with [NESW] appended
+
+example: sunwait sun up -0:15:10 38.794433N 77.069450W
+This example will wait until 15 minutes and 10 seconds before the sun rises in Alexandria, VA
+
+The offset is expressed as MM, or HH:MM, or HH:MM:SS,
+and indicates the additional amount of time to wait after 
+(or before, if negative) the specified event.
+
+options: -p prints a summary of relevant times
+         -z changes the printout to Universal Coordinated Time (UTC)
+         -V prints the version number
+         -v increases verbosity
+
+These options are useful mainly when used with the '-p' option
+         -y YYYY sets the year to calculate for
+         -m MM sets the month to calculate for
+         -d DD sets the day-of-month to calculate for
+
+         -h prints this help
+```
+Source: http://www.risacher.org/sunwait/
