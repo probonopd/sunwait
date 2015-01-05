@@ -1,15 +1,16 @@
 sunwait-for-openwrt [![Build Status](https://travis-ci.org/probonopd/sunwait-for-openwrt.svg)](https://travis-ci.org/probonopd/sunwait-for-openwrt)
 ===================
-
 Calculate sunrise and sunset, as well as civil, nautical, and astronomical twilights. Has features that make it useful for home automation tasks.
 	
 GitHub clone based on http://www.risacher.org/sunwait/
 
+Downloading
+--
+Precompiled binaries for common architectures can be found on https://github.com/probonopd/vcontrold-for-openwrt/releases - check the ```.travis.yml``` file to see how this is compiled on http://travis-ci.org automatically. Please file an issue if you need addional architectures and/or OpenWrt versions.
+
 Building
 --
 To build, pull this repository into the ```package/``` subdirectory in the OpenWrt SDK with ```git clone https://github.com/probonopd/sunwait-for-openwrt.git```, then ```make V=s```. This will create ./bin/ar71xx/packages/base/sunwait_1.0-1_ar71xx.ipk (depending on your architecture).
-
-Check the ```.travis.yml``` file to see how this is compiled on http://travis-ci.org automatically.
 
 Using
 --
