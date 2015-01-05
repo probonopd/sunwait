@@ -39,14 +39,12 @@ script:
 - find $TRAVIS_BUILD_DIR/sdk/OpenWrt-SDK-*/bin/
 - find . -name *.ipk -exec cp {} $TRAVIS_BUILD_DIR \;
 - cd $TRAVIS_BUILD_DIR/
-- chmod a+x $TRAVIS_BUILD_DIR/deploy.sh
-after_success: $TRAVIS_BUILD_DIR/deploy.sh
 before_deploy:
   git fetch --tags
 deploy:
   provider: releases
   api_key:
-    secure:
+    secure: EZQ5GzQyQe67gNtDr+ysIWqf+WnnUSBvlTVcc2kQb0K17LGpGwZvpYLcRrOkhLMUH3h+Gh+6a36Ihx5FYty9AaOExFto1kK8aAoq0XAFGWhk2DDFjAjZkos3W9u0MJ/QZcCq5QxlT0jIGjqu8xOyKENd78+iIsgbMWPFa2ww0NY=
   skip_cleanup: true
   file_glob: true
   file: $TRAVIS_BUILD_DIR/*.ipk
